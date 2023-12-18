@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: cgras_scene
+    relative_path: urdf/all.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/custom_env.srdf
+  CONFIG:
+    author_name: Andrew Lui
+    author_email: ak.lui@qut.edu.au
+    generated_timestamp: 1702971011
