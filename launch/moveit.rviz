@@ -6,26 +6,9 @@ Panels:
       Expanded:
         - /MotionPlanning1/Planned Path1
         - /PlanningScene1
-        - /PlanningScene1/Scene Geometry1
-        - /PlanningScene1/Scene Robot1
         - /PlanningScene1/Scene Robot1/Links1
-        - /PlanningScene1/Scene Robot1/Links1/base1
-        - /PlanningScene1/Scene Robot1/Links1/base_link1
-        - /PlanningScene1/Scene Robot1/Links1/base_link_inertia1
-        - /PlanningScene1/Scene Robot1/Links1/ee_control_link1
-        - /PlanningScene1/Scene Robot1/Links1/enclosure1
-        - /PlanningScene1/Scene Robot1/Links1/flange1
-        - /PlanningScene1/Scene Robot1/Links1/forearm_link1
-        - /PlanningScene1/Scene Robot1/Links1/shoulder_link1
-        - /PlanningScene1/Scene Robot1/Links1/tool01
-        - /PlanningScene1/Scene Robot1/Links1/trolley1
-        - /PlanningScene1/Scene Robot1/Links1/trolley_robot_base1
-        - /PlanningScene1/Scene Robot1/Links1/upper_arm_link1
-        - /PlanningScene1/Scene Robot1/Links1/wrist_1_link1
-        - /PlanningScene1/Scene Robot1/Links1/wrist_2_link1
-        - /PlanningScene1/Scene Robot1/Links1/wrist_3_link1
       Splitter Ratio: 0.5
-    Tree Height: 449
+    Tree Height: 283
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -296,7 +279,7 @@ Visualization Manager:
         Links:
           All Links Enabled: true
           Expand Joint Details: false
-          Expand Link Details: true
+          Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
           base:
@@ -332,7 +315,7 @@ Visualization Manager:
             Value: true
           shoulder_link:
             Alpha: 1
-            Show Axes: true
+            Show Axes: false
             Show Trail: false
             Value: true
           tool0:
@@ -365,12 +348,113 @@ Visualization Manager:
             Value: true
           wrist_3_link:
             Alpha: 1
-            Show Axes: true
+            Show Axes: false
             Show Trail: false
             Value: true
         Robot Alpha: 1
         Show Robot Collision: false
         Show Robot Visual: true
+      Value: true
+    - Alpha: 1
+      Class: rviz/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: trolley
+      Show Trail: false
+      Value: true
+    - Class: moveit_rviz_plugin/Trajectory
+      Color Enabled: false
+      Enabled: true
+      Interrupt Display: false
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        base_link_inertia:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ee_control_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        enclosure:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        flange:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        forearm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        shoulder_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        trolley:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        trolley_robot_base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        upper_arm_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_1_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_2_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        wrist_3_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Loop Animation: false
+      Name: Trajectory
+      Robot Alpha: 0.5
+      Robot Color: 150; 50; 150
+      Robot Description: robot_description
+      Show Robot Collision: false
+      Show Robot Visual: true
+      Show Trail: false
+      State Display Time: 3x
+      Trail Step Size: 1
+      Trajectory Topic: move_group/display_planned_path
+      Use Sim Time: false
       Value: true
   Enabled: true
   Global Options:
@@ -388,7 +472,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.8038458824157715
+      Distance: 1.8030380010604858
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -404,9 +488,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.4949917197227478
+      Pitch: 0.22999194264411926
       Target Frame: trolley
-      Yaw: 1.6617615222930908
+      Yaw: 0.6817596554756165
     Saved: ~
 Window Geometry:
   Displays:
@@ -420,9 +504,11 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000001f0000002fafc0200000007fb000000100044006900730070006c006100790073010000003b00000250000000c700fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a005600690065007700730100000291000000a4000000a000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001b60000017f0000016a00ffffff00000315000002fa00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000001f0000002fafc0200000008fb000000100044006900730070006c006100790073010000003b000001aa000000c700fffffffb0000000800480065006c00700000000342000000bb0000006e00fffffffb0000000a0056006900650077007301000001eb0000014a000000a000fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000001600000016fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e006700000001b60000017f0000016900fffffffb000000280020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000003f00ffffff00000315000002fa00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Trajectory - Slider:
+    collapsed: false
   Views:
     collapsed: false
   Width: 1291
-  X: 1018
-  Y: 166
+  X: 1210
+  Y: 124

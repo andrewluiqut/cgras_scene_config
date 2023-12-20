@@ -18,7 +18,7 @@
         <joint name="wrist_3_joint"/>
         <joint name="wrist_3-flange"/>
         <joint name="flange-tool0"/>
-        <joint name="gripper_joint"/>
+        <joint name="enclosure_joint"/>
         <joint name="ee_control_joint"/>
     </group>
     <group name="enclosure">
